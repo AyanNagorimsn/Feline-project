@@ -1,12 +1,5 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom/client'
-// import './index.css'
+import React from "react";
 
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-// )
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
