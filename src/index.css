@@ -3,3 +3,22 @@
 @tailwind utilities;
 
 /* Reset stuff here */
+:root {
+  --primary: #ff6b00;
+  --primaryLight: #edd1bd;
+  --black: #222;
+  --white: #fff;
+  --whitebg: #fafafa;
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url(./assets/coolvetica.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Coolvetica;
+}
