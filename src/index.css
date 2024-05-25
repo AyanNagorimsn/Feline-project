@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,6 +11,10 @@
   --black: #222;
   --white: #fff;
   --whitebg: #fafafa;
+  --grey: #444;
+
+  --font-cool: "Coolvetica";
+  --font-inter: "Inter";
 }
 
 @font-face {
@@ -20,5 +26,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Coolvetica;
+  font-family: var(--font-inter);
+}
+
+header {
+  background: url("./assets/heroImage.png") 0px / cover;
+}
+
+.gradient {
+  background: linear-gradient(to left, #ffa361, #ff6b00);
+}
+.text-gradient {
+  background: linear-gradient(to left, #ffa361, #ff6b00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  background: var(--primary);
+  color: var(--white);
+  padding: 0.5em 1em;
+  border-radius: 10rem;
 }
