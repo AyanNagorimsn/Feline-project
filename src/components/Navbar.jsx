@@ -39,7 +39,7 @@ const Navbar = ({ activeNavLink }) => {
       <div className="container flex justify-between items-center">
         <h1 className="text-3xl font-cool">FELINE</h1>
 
-        <ul className="flex gap-4">
+        <ul className="flex gap-7">
           {["Home", "Explore", "Featured Breed", "Why Feline", "About Us"].map((item, i) => (
             <li
               className={`py-1 flex text-sm font-semibold ${
@@ -52,7 +52,7 @@ const Navbar = ({ activeNavLink }) => {
           ))}
         </ul>
 
-        <button className="btn">View Breeds</button>
+        <button className="btn text-sm font-semibold">View Breeds</button>
       </div>
     </motion.nav>
   );
