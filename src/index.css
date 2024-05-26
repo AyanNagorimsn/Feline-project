@@ -36,6 +36,7 @@ header {
 .gradient {
   background: linear-gradient(to left, #ffa361, #ff6b00);
 }
+
 .text-gradient {
   background: linear-gradient(to left, #ffa361, #ff6b00);
   background-clip: text;
@@ -48,4 +49,10 @@ header {
   color: var(--white);
   padding: 0.5em 1em;
   border-radius: 10rem;
+}
+
+.container {
+  width: 92%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
