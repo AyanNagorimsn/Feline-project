@@ -22,20 +22,20 @@ function Home() {
         </div>
       </header>
 
-      <section className="container h-screen flex justify-around items-center pt-24">
+      <section className="container h-screen flex justify-center	 items-center pt-[3.5rem]">
         <div className="h-[85%]">
           <img className="h-full" src="src\assets\ctaimage.png" alt="ctaImage" />
         </div>
-        <div className="w-[45%]">
-          <h1 className="font-cool text-[5vw] leading-[1.1]">Discover the World of Cats</h1>
-          <p className="text-lg text-grey mt-4">
+        <div className="w-[35%] ml-[3rem]">
+          <h1 className="w-[95%] font-cool text-[4vw] leading-[1.1]">Discover the World of Cats</h1>
+          <p className="text-xl text-grey mt-8">
             At Feline, we are passionate about cats and dedicated to providing you with
             comprehensive information on every cat breed. Whether you're a lifelong cat lover, a
             prospective pet owner, or simply curious about our feline friends, you've come to the
             right place!
           </p>
 
-          <button className="btn mt-6">Explore Database</button>
+          <button className="btn mt-10 font-semibold">Explore Database</button>
         </div>
       </section>
     </>
