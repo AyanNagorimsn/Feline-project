@@ -6,58 +6,58 @@
 
 /* Reset stuff here */
 :root {
-    --primary: #ff6b00;
-    --primaryLight: #edd1bd;
-    --black: #222;
-    --white: #fff;
-    --whitebg: #fafafa;
-    --grey: #444;
+  --primary: #ff6b00;
+  --primaryLight: #edd1bd;
+  --black: #222;
+  --white: #fff;
+  --whitebg: #fafafa;
+  --grey: #444;
 
-    --font-cool: "Coolvetica";
-    --font-inter: "Inter";
+  --font-cool: "Coolvetica";
+  --font-inter: "Inter";
 }
 
 @font-face {
-    font-family: "Coolvetica";
-    src: url(./assets/coolvetica.otf);
+  font-family: "Coolvetica";
+  src: url(./assets/coolvetica.otf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-inter);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
 }
 
 body {
-    background: #f2f2f2;
+  background: #f2f2f2;
 }
 
 header {
-    background: url("./assets/heroImage.png") 0px / cover;
-    background-position: center right;
+  background: url("./assets/heroImage.png") 0px / cover;
+  background-position: center right;
 }
 
 .gradient {
-    background: linear-gradient(to left, #ffa361, #ff6b00);
+  background: linear-gradient(to left, #ffa361, #ff6b00);
 }
 
 .text-gradient {
-    background: linear-gradient(to left, #ffa361, #ff6b00);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to left, #ffa361, #ff6b00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn {
-    background: var(--primary);
-    color: var(--white);
-    border-radius: 10rem;
-    padding: 0.625rem 1.25rem;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 10rem;
+  padding: 0.625rem 1.25rem;
 }
 
 .container {
-    width: 92%;
-    max-width: 1440px;
-    margin: 0 auto;
+  width: 92%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
