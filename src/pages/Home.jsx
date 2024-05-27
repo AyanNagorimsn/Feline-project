@@ -26,7 +26,7 @@ function Home() {
       <section>
         <div className="container h-screen flex justify-center items-center pt-[3.5rem]">
           <div className="h-[85%]">
-            <img className="h-full" src="src\assets\ctaimage.png" alt="ctaImage" />
+            <div className="h-full" src="src\assets\ctaimage.png" alt="ctaImage" />
           </div>
           <div className="w-[35%] ml-[3rem]">
             <h1 className="w-[95%] font-cool text-[4vw] leading-[1.1]">
