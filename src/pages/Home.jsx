@@ -23,7 +23,7 @@ function Home() {
         </div>
       </header>
 
-      <section className="bg-[#f2f2f2]">
+      <section>
         <div className="container h-screen flex justify-center items-center pt-[3.5rem]">
           <div className="h-[85%]">
             <img className="h-full" src="src\assets\ctaimage.png" alt="ctaImage" />

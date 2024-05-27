@@ -29,6 +29,10 @@
   font-family: var(--font-inter);
 }
 
+body {
+  background: #f2f2f2;
+}
+
 header {
   background: url("./assets/heroImage.png") 0px / cover;
 }

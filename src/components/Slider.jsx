@@ -1,5 +1,5 @@
 const Slider = () => {
-  return <section className="h-screen border-2 border-primary">Slider</section>;
+  return <div>Slider</div>;
 };
 
 export default Slider;

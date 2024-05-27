@@ -3,39 +3,28 @@ import { motion, useAnimation } from "framer-motion";
 
 const Navbar = ({ activeNavLink }) => {
   const [scrollY, setScrollY] = useState(0);
-  const controls = useAnimation();
+  const [navStyle, setNavStyle] = useState({});
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", () => setScrollY(window.scrollY));
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", setScrollY(window.scrollY));
     };
   }, []);
 
   useEffect(() => {
-    if (scrollY > 0) {
-      controls.start({
-        backgroundColor: "rgba(255, 255, 255, 0.8)",
-        backdropFilter: "blur(10px)",
+    if (scrollY > 5) {
+      setNavStyle({
+        backgroundColor: "#ffffffcc",
+        backdropFilter: "blur(5px)",
       });
     } else {
-      controls.start({
-        backgroundColor: "transparent",
-        backdropFilter: "blur(0px)",
-      });
+      setNavStyle({ backgroundColor: "#00000000", backdropFilter: "blur(0px)" });
     }
-  }, [scrollY, controls]);
+  }, [scrollY]);
 
   return (
-    <motion.nav
-      className="fixed top-0 w-full duration-300 py-2"
-      animate={controls}
-      initial={{ backgroundColor: "transparent", backdropFilter: "blur(0px)" }}
-    >
+    <motion.nav className="fixed top-0 w-full duration-500 py-2 bg-transparent" style={navStyle}>
       <div className="container flex justify-between items-center">
         <h1 className="text-3xl font-cool">FELINE</h1>
 
